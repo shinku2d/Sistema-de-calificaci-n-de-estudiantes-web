@@ -1,3 +1,6 @@
-<p>
-  search works!
-</p>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let course of showedList; index as i">
+        {{course.nombre}}
+        <span class="badge badge-primary badge-pill" [innerHtml]="i+1">  </span>
+    </li>
+</ul>

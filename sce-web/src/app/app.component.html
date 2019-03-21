@@ -14,11 +14,12 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input id="buscar" name="buscar" class="form-control mr-sm-2" type="search" [(ngModel)]="term" (keyup)="searchCourses(term)" placeholder="Search" aria-label="Search">
+            <button id="btnBuscar" class="btn btn-outline-success my-2 my-sm-0" (click)="searchCourses(term)" type="submit">Search</button>
         </form>
     </div>
 </nav>
+
 <router-outlet>
 </router-outlet>
 <nav class="navbar fixed-bottom navbar-dark bg-dark">

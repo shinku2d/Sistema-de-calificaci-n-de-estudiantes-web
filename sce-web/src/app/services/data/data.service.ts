@@ -78,10 +78,56 @@ export class DataService {
   }
   ];
 
+  coursesList = [{
+    "nombre": "Programación Web",
+    "profesor": "Randall Corrales",
+    "año": 2019,
+    "Semestre": "I"
+  },
+  {
+    "nombre": "Análisis en cloud Computing",
+    "profesor": "Jorge Chinchilla",
+    "año": 2019,
+    "Semestre": "II"
+  },
+  {
+    "nombre": "Investigación de proyectos",
+    "profesor": "Carlos Benavides",
+    "año": 2019,
+    "Semestre": "II"
+  },
+  {
+    "nombre": "Sistemas de información distribuidos",
+    "profesor": "Ana Fuentes",
+    "año": 2019,
+    "Semestre": "I"
+  },
+  {
+    "nombre": "Bases de datos Web",
+    "profesor": "Krissia Navarro",
+    "año": 2019,
+    "Semestre": "I"
+  },
+  {
+    "nombre": "Diseño Web",
+    "profesor": "Kembly Calderon",
+    "año": 2019,
+    "Semestre": "II"
+  },
+  {
+    "nombre": "Analisis de Bases de datos",
+    "profesor": "Jorge Mora",
+    "año": 2019,
+    "Semestre": "II"
+  }
+  ];
+
   constructor() { }
 
   getStudentList = () => {
     console.log(2);
     return this.estudentsList
   };
+
+  getCoursesList = () => this.coursesList;
 }
